@@ -1,0 +1,17 @@
+extends ./base.jade
+block append style
+    link( rel = "stylesheet", type = "text/css", href = "/assets/css/app.css" )
+    link( rel = "stylesheet", type = "text/css", href = "/assets/css/style.css" )
+block body
+  img#logoSmall( src = "/assets/img/misc/jokemonlogo128.png", alt = "Jokémon" )
+  a( class = "navBtn", href="/logout") Log out
+  h2.jokeTxt Your friend #{ jokemon.name }
+  img( class = "jokemonImg", src = "/assets/img/sprites/menu/large/#{ jokemon.typeId }.png", alt = "#{ jokemon.name }" )
+  h3.jokeTxt It doesn't do much...
+  #jopusMessage
+    img#speech( src = "/assets/img/misc/speech.png", alt = "speech box" )
+    h3
+      span#errorMessage Wrong username or password
+    img#jopus( src = "assets/img/misc/errorjopus.png", alt = "I'm a Jopus!" )
+block scripts
+  script( src = "/assets/src/appfunctions.js" )

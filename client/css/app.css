@@ -1,0 +1,49 @@
+.jokemonImg
+{
+    width: 350px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.navBtn
+{
+    transition: background-color 0.4s ease;
+    display: block;
+    width: 100px;
+    margin: 7px;
+    
+    text-align: center;
+    font-size: 1.2em;
+    
+    background-color: #2f548b;
+    border: 3px solid #2f548b;
+    border-radius: 5px;
+    
+    font-family: "Pokemon-Solid";
+    text-decoration: none;
+    color: #c89f1a;
+    
+    position: absolute;
+    top: 110px;
+}
+
+.navBtn:hover
+{
+    transition: color 0.2s ease;
+    background-color: #3a5ea9;
+    color: #ffcb05;
+}
+
+.navBtn:active
+{
+    transition: transform 0.1s ease;
+    transform: scale( 0.95, 0.95 );
+}
+
+.interactBtn
+{
+    position:relative;
+    bottom: 0;
+    width: 64px;
+}

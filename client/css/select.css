@@ -1,0 +1,107 @@
+body, #selector, #myCarousel, .container, .item
+{
+    width: 100%;
+    padding: 0;
+}
+
+.container
+{
+    margin-bottom: 20px;
+}
+
+#selectSubmit
+{
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+    
+    width: 150px;
+    height: 50px;
+    
+    background-color: #c89f1a;
+    border: 3px solid #2f548b;
+    border-radius: 5px;
+    
+    text-align: center;
+    font-size: 2em;
+    font-family: "Pokemon-Solid";
+    color: #2f548b;
+    text-decoration: none;
+}
+
+#selectSubmit:hover
+{
+    transition: opacity 0.25s ease;
+    border-color: #3a5ea9;
+    background-color: #ffcb05;
+    color: #3a5ea9;
+}
+
+#selectSubmit:active
+{
+    transition: transform 0.1s ease;
+    transform: scale( 0.9, 0.9 );
+}
+
+.jokemonSelection
+{
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.carousel-caption
+{
+    bottom: 0;
+    padding-bottom: 0px;
+}
+
+.carousel-control
+{
+    border: 3px solid #2f548b;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    opacity: 1.0;
+    
+    margin-top: 320px;
+}
+
+.carousel-control.left, 
+.carousel-control.right
+{
+    background-image: none;
+    background-color: #c89f1a;
+    color: #2f548b;
+    left: 50%;
+}
+
+.carousel-control.left:hover, 
+.carousel-control.right:hover
+{
+    border-color: #3a5ea9;
+    background-color: #ffcb05;
+    color: #3a5ea9;
+    opacity: 1.0;
+    
+    transition: transform 0.1s ease;
+    transform: scale( 1.1, 1.1 );
+}
+
+.carousel-control.left:focus, 
+.carousel-control.right:focus
+{
+    opacity: 1.0;
+}
+
+.carousel-control.left
+{
+    margin-left: -150px;
+}
+
+.carousel-control.right
+{
+    margin-left: 100px;
+}

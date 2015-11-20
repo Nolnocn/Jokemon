@@ -1,0 +1,21 @@
+extends ./base.jade
+block append style
+    link( rel = "stylesheet", type = "text/css", href = "/assets/css/style.css" )
+    link( rel = "stylesheet", type = "text/css", href = "/assets/css/forms.css" )
+block body
+  img#logo( src = "/assets/img/misc/jokemonlogo.png", alt = "Jokémon" )
+  section#login
+    form#loginForm( class = "mainForm", name = "loginForm", action = "/login", method = "POST" )
+      input#user( type = "text", name = "username", placeholder = "username" )
+      input#pass( type = "password", name = "pass", placeholder = "password" )
+      input( type = "hidden", name = "_csrf", value = "#{csrfToken}" )
+      a#loginSubmit( class = "formSubmit", href = "#" ) Sign in
+      a( class = "link" href = "/signup" ) Don't have an account?<br>Sign up!
+  #jopusMessage
+    img#speech( src = "/assets/img/misc/speech.png", alt = "speech box" )
+    h3
+      span#errorMessage Wrong username or password
+    img#jopus( src = "assets/img/misc/errorjopus.png", alt = "I'm a Jopus!" )
+block scripts
+  script( src = "/assets/src/appfunctions.js" )
+  script( src = "/assets/src/signin.js" )
