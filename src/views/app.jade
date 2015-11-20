@@ -5,9 +5,9 @@ block append style
 block body
   img#logoSmall( src = "/assets/img/misc/jokemonlogo128.png", alt = "Jokémon" )
   a( class = "navBtn", href="/logout") Log out
-  h2.jokeTxt Your friend #{ jokemon.name }
+  h1.jokeTxt Your friend #{ jokemon.name }
   img( class = "jokemonImg", src = "/assets/img/sprites/menu/large/#{ jokemon.typeId }.png", alt = "#{ jokemon.name }" )
-  h3.jokeTxt It doesn't do much...
+  h2.jokeTxt It doesn't do much...
   #jopusMessage
     img#speech( src = "/assets/img/misc/speech.png", alt = "speech box" )
     h3

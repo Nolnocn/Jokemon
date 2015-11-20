@@ -6,7 +6,7 @@ block append style
 block body
   img#logoSmall( src = "/assets/img/misc/jokemonlogo128.png", alt = "Jokémon" )
   section#selector
-    h2.jokeTxt Choose your Jokémon!
+    h1.jokeTxt Choose your Jokémon!
     if !jokemon
       div
         h3.emptyDomo Uh oh, Nick messed up... :(
@@ -30,7 +30,7 @@ block body
                 .item
                   img( class = "jokemonSelection", src = "/assets/img/sprites/menu/large/#{ joke.typeId }.png", alt = "#{ joke.name }" )
                   .carousel-caption
-                    h3.jokeTxt #{ joke.name }
+                    h2.jokeTxt #{ joke.name }
           a.left.carousel-control( href = '#myCarousel', role = 'button', data-slide = 'prev' )
             span.glyphicon.glyphicon-chevron-left( aria-hidden = 'true' )
             span.sr-only Previous
